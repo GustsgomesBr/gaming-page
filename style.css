@@ -31,7 +31,32 @@ header{
     font-weight: 700;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-top: 1rem;
+}
+
+.logo{
+    width: 25%;
+    display: flex;
+    align-items: center;   
+    margin-left: 2rem;
+}
+
+.GitHub{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-right: 2rem;
+}
+
+.GitHub button{
+    background: none;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 7rem;
+    font-size: 12pt;
+    font-weight: 700;
 }
 
 nav{
@@ -39,6 +64,7 @@ nav{
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 50%;
 }
 
 nav a{
@@ -55,4 +81,5 @@ nav a:hover{
 }
 
 header button{
+    width: 25%;
 }
