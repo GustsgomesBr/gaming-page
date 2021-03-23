@@ -82,12 +82,12 @@ nav a{
     padding: 0px 3px 0px 3px;
     margin-left: 10px;
     margin-right: 10px;
-    border-bottom: 3px solid red;
     transition: ease 0.1s;
 }
 
 nav a:hover{
     letter-spacing: 1px;   
+    border-bottom: 3px solid red;
 }
 
 main{
@@ -100,16 +100,15 @@ main{
 main section{
     background-color: black;
     color: white;
-    width: 20rem;
-    height: 33rem;
+    width: 13rem;
+    height: 23rem;
     border-radius: 60px;
-    box-shadow: 5px 5px 15px solid rgba(0, 0, 0, 0.2);
     text-align: center;
     z-index: -2;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: bottom;
+    justify-content: center;
     flex-direction: column;
     margin-left: 2rem;
 }
@@ -119,7 +118,7 @@ section img {
     height: 100%;
     border-top-left-radius: 50px;
     border-radius: 60px;
-    opacity: 0.7;
+    opacity: 0.9;
     position: absolute;
     z-index: -1;
     left: 0px;
@@ -127,8 +126,15 @@ section img {
 }
 
 section .title{
-    margin-top: 100%;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 16rem;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.1rem);
+    padding-top: 20px;
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
 }
 
 .title h2{
@@ -137,5 +143,13 @@ section .title{
 }
 
 .title h1{
-    font-size: 20pt;
+    padding-top: 10px;
+    font-size: 25pt;
+    z-index: 1;
+    transition: ease 0.1s;
+}
+
+.title h1:hover{
+    letter-spacing: 1px;
+    border-bottom: 5px solid red;
 }
