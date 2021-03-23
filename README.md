@@ -1,4 +1,4 @@
-###Gamming Page
+###Gaming Page
 
-Uma p·gina simples
+Uma p√°gina simples
 
