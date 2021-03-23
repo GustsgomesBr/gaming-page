@@ -8,13 +8,14 @@
 }
 
 body{
-    background: url("bg.jpg") no-repeat;
+    background: url("bg2.jpg") no-repeat;
     background-size: 1500px;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .content{
@@ -95,61 +96,55 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-main section{
-    background-color: black;
-    color: white;
-    width: 13rem;
-    height: 23rem;
-    border-radius: 60px;
-    text-align: center;
-    z-index: -2;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    margin-left: 2rem;
 }
 
-section img {
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 50px;
-    border-radius: 60px;
-    opacity: 0.9;
-    position: absolute;
-    z-index: -1;
-    left: 0px;
-    top: 0px;
+main h1{
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-section .title{
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    margin-top: 16rem;
+main .games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.games section{
+    width: 15rem;
+    height: 25rem;
+    margin-left: 10px;
+    margin-right: 10px;
     background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(0.1rem);
-    padding-top: 20px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.5rem);
+    cursor: pointer;
+}
+
+.games section img{
     width: 100%;
-    height: 50%;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    height: 80%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+section .title{
+    text-align: center;
 }
 
-.title h2{
-    font-weight: 400;
-    font-size: 15pt;
+section .title h2{
+    font-weight: 500;
+    font-size: 12pt;
+    padding-bottom: 10px;
 }
 
-.title h1{
-    padding-top: 10px;
-    font-size: 25pt;
-    z-index: 1;
-    transition: ease 0.1s;
+section .title h1{
+    font-size: 20pt;
 }
 
-.title h1:hover{
-    letter-spacing: 1px;
+
+.games section h1:hover{
     border-bottom: 5px solid red;
+    letter-spacing: 1px;
 }
