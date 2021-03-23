@@ -8,14 +8,14 @@
 }
 
 body{
-    background: url("bg2.jpg") no-repeat;
+    background: url("bg1.jpg") no-repeat;
     background-size: 1500px;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    backdrop-filter: blur(0.4rem);
 }
 
 .content{
@@ -32,7 +32,6 @@ header{
     display: flex;
     align-items: center;
     padding: 1rem 0 1rem 0;
-    
     background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
     backdrop-filter: blur(0.5rem);
 }
@@ -92,7 +91,7 @@ nav a:hover{
 }
 
 main{
-    height: 85%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,14 +112,20 @@ main .games{
 
 .games section{
     width: 15rem;
-    height: 25rem;
+    height: 27rem;
     margin-left: 10px;
     margin-right: 10px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(0.5rem);
+    backdrop-filter: blur(0.8rem);
     cursor: pointer;
+    transition: ease 0.1s;
+}
+
+.games section:hover{
+    transform: translateY(-10px);
+    letter-spacing: 1px;
 }
 
 .games section img{
@@ -137,14 +142,13 @@ section .title h2{
     font-weight: 500;
     font-size: 12pt;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 section .title h1{
     font-size: 20pt;
 }
 
-
 .games section h1:hover{
-    border-bottom: 5px solid red;
     letter-spacing: 1px;
 }
