@@ -63,6 +63,8 @@ header nav a:hover{
     transform: translateY(-5px);
 }
 
+/* MAIN */
+
 main{
     grid-area: main;
     display: flex;
@@ -78,12 +80,54 @@ main .wallpaper{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-main .wallpaper img{
+main .wallpaper .wppbg{
     width: 100%;
+    transform: translateY(-150px);
     overflow: hidden;
-    opacity: 0.5;
+    opacity: 0.3;
+    position: relative;
+    z-index: 1;
+    transition: 5s ease-in-out;
 }
 
+main .wallpaper .wppbg:hover{
+    transform: translateY(-50px);
+}
+
+.wallpaper .wppTxt{
+    position: absolute;
+    z-index: 2;
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+
+.character{
+    opacity: 0.95;
+    position: absolute;
+    z-index: 3;
+    margin-top: -6rem;
+    margin-left: 43rem;
+    width: 500px;
+    height: 500px;
+}
+
+
+.wppTxt h3{
+    color: #892cdc;
+    font-size: 20pt;
+}
+
+.wppTxt h1{
+    font-size: 45pt;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+section .topGames{
+    
+}
+
+/* /MAIN */
+/* ASIDE */
 
 aside{
     grid-area: aside;
@@ -130,3 +174,5 @@ section .aFriend img{
     height: 45px;
     margin-right: 1rem;
 }
+
+/* /ASIDE */
