@@ -12,13 +12,13 @@
 
 body{
     width: 100vw;
-    height: 100vh;
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 13fr;
     grid-template-areas: "header header"
                             "main aside";
     background-color: #151515;
+    overflow-x:hidden;
 }
 
 header{
@@ -37,12 +37,20 @@ header button{
     background-color: #892cdc;
     font-weight: 500;
     margin-top: 10px;
+    transition: 0.3s ease-in;
+}
+
+header button:hover{
+    letter-spacing: 1px;
+    background-color: #6c22ac;
+    transform: translateY(-5px);
 }
 
 header nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 4;
 }
 
 header nav a{
@@ -68,7 +76,8 @@ header nav a:hover{
 main{
     grid-area: main;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: 2rem;
 }
 
@@ -122,8 +131,43 @@ main .wallpaper .wppbg:hover{
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-section .topGames{
-    
+main .topGames{
+    width: 95%;
+    height: 17rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.topGames h1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 14pt;
+    color: #892cdc;
+}
+
+.topDiv {
+    display: flex;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+}
+
+.topGamesItem{
+    background-color: #6c22ac;
+    width: 15%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 1rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.topGames img{
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
 }
 
 /* /MAIN */
