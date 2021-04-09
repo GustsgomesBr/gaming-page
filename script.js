@@ -1,81 +1,99 @@
 const ourGames = [
     {
         name: "Apex Legends",
-        img: "",
-        category: ["Action", "Adventure"]
+        img: "./img/games/Apex-Legends.jpg",
+        category: ["Action", "Adventure"],
+        link: ""
     },
     {
         name: "Albion Online",
-        img: "",
-        category: ["Adventure", "Action", "MMO"]
+        img: "./img/games/albion-online.jpg",
+        category: ["Adventure", "Action", "MMO"],
+        link: ""
     },
     {
         name: "Brawlhalla",
-        img: "",
-        category: ["Adventure"]
+        img: "./img/games/brawlhalla",
+        category: ["Adventure"],
+        link: ""
     },
     {
         name: "Counter-Strike: Global Offensive",
-        img: "",
-        category: ["Action"]
+        img: "./img/games/cs-go.jpg",
+        category: ["Action"],
+        link: ""
     },
     {
         name: "Destiny 2",
-        img: "",
-        category: ["Action", "Adventure"]
+        img: "./img/games/Destiny-2.jpg",
+        category: ["Action", "Adventure"],
+        link: ""
     },
     {
         name: "Dota 2",
-        img: "",
-        category: ["Action", "MMO"]
+        img: "./img/games/dota-2.jpg",
+        category: ["Action", "MMO"],
+        link: ""
     },
     {
-        name: "DSC World",
-        img: "",
-        category: ["Simulation"]
+        name: "DCS World",
+        img: "./img/games/DCSjpg.jpg",
+        category: ["Simulation"],
+        link: ""
     },
     {
         name: "Team Fortress 2",
-        img: "",
-        category: ["Adventure", "Action"]
+        img: "./img/games/team-fortress-2.jpg",
+        category: ["Adventure", "Action"],
+        link: ""
     },{
         name: "Trove",
-        img: "",
-        category: ["Adventure"]
+        img: "./img/games/trove.jpg",
+        category: ["Adventure"],
+        link: ""
     },
     {
         name: "Paladins",
-        img: "",
-        category: ["Action", "Strategy"]
+        img: "./img/games/paladins.jpg",
+        category: ["Action", "Strategy"],
+        link: ""
     },
     {
         name: "Warframe",
-        img: "",
-        category: ["Adventure", "Action"]
+        img: "./img/games/warframe.jpg",
+        category: ["Adventure", "Action"],
+        link: ""
     },
     {
         name: "War Thunder",
-        img: "",
-        category: ["Adventure", "Action", "Simulation"]
+        img: "./img/games/war-thunder.jpg",
+        category: ["Adventure", "Action", "Simulation"],
+        link: ""
     },{
         name: "Warface",
-        img: "",
-        category: ["Action", "Adventure", "Simulation"]
+        img: "./img/games/warface.jpg",
+        category: ["Action", "Adventure", "Simulation"],
+        link: ""
     },
     {
         name: "EVE Online",
-        img: "",
-        category: ["Adventure", "MMO"]
+        img: "./img/games/eve-online.jpg",
+        category: ["Adventure", "MMO"],
+        link: ""
     },
     {
-        name: "Word of Tanks Blitz",
-        img: "",
-        category: ["Action", "Simulation"]
+        name: "World of Tanks Blitz",
+        img: "./img/games/word-of-tanks-blitz.jpg",
+        category: ["Action", "Simulation"],
+        link: ""
     },
     {
-        name: "Word of Warships",
-        img: "",
-        category: ["Adventure", "Action", "Simulation"]
+        name: "World of Warships",
+        img: "./img/games/word-of-warships.jpg",
+        category: ["Adventure", "Action", "Simulation"],
+        link: ""
     }
 
 ]
+
+
