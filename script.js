@@ -57,6 +57,15 @@ const ourGames = [
         name: "War Thunder",
         img: "",
         category: ["Adventure", "Action", "Simulation"]
+    },{
+        name: "Warface",
+        img: "",
+        category: ["Action", "Adventure", "Simulation"]
+    },
+    {
+        name: "EVE Online",
+        img: "",
+        category: ["Adventure", "MMO"]
     },
     {
         name: "Word of Tanks Blitz",
