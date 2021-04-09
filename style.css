@@ -71,7 +71,7 @@ header nav a:hover{
     transform: translateY(-5px);
 }
 
-#ative{
+#ativo{
     cursor: pointer;
     border-bottom: 2px solid #892cdc;
     transform: translateY(-2px);
@@ -141,7 +141,7 @@ main .topGames{
     width: 95%;
     height: 22rem;
     margin-top: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     border-bottom: 3px solid #892cdc;
 }
 
@@ -182,6 +182,31 @@ main .topGames{
     height: auto;
     opacity: 0.8;
 }
+
+.ourGames{
+    width: 95%;
+    height: 22rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #892cdc;
+}
+
+.ourGames .navGames a{
+    display: inline-block;
+    margin-right: 0.7rem;
+    font-weight: 500;
+    font-size: 12pt;
+    padding-bottom: 3px;
+    transition: 0.1s ease-in;
+}
+
+.navGames a:hover{
+    cursor: pointer;
+    border-bottom: 3px solid #892cdc;
+    transform: translateY(-3px);
+    letter-spacing: 0.5px;
+}
+
+
 
 /* /MAIN */
 /* ASIDE */
