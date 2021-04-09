@@ -196,11 +196,11 @@ main .topGames{
     font-weight: 500;
     font-size: 12pt;
     padding-bottom: 3px;
+    cursor: pointer;
     transition: 0.1s ease-in;
 }
 
 .navGames a:hover{
-    cursor: pointer;
     border-bottom: 3px solid #892cdc;
     transform: translateY(-3px);
     letter-spacing: 0.5px;
