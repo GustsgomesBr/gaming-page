@@ -13,7 +13,7 @@ const ourGames = [
     },
     {
         name: "Brawlhalla",
-        img: "./img/games/brawlhalla",
+        img: "./img/games/brawlhalla.jpg",
         category: ["Adventure"],
         link: ""
     },
@@ -89,11 +89,34 @@ const ourGames = [
     },
     {
         name: "World of Warships",
-        img: "./img/games/word-of-warships.jpg",
+        img: "./img/games/world-of-warships.jpg",
         category: ["Adventure", "Action", "Simulation"],
         link: ""
     }
 
 ]
 
+function ShowGames(gen){
 
+    for (let i = 0; i < ourGames.length; i++) {
+
+        if(gen === "All Games"){
+            var ourGamesItem = document.createElement('div');
+            var ourGamesImg = document.createElement('img');
+            var ourGamesH1 = document.createElement('h1');
+            ourGamesH1.innerHTML = ourGames[i].name;
+
+            ourGamesItem.className = "ourGamesItem";
+            ourGamesImg.src = ourGames[i].img;
+
+            var ourGamesSection = document.getElementsByClassName('ourGamesSection')[0]
+
+            ourGamesSection.appendChild(ourGamesItem);
+            ourGamesItem.appendChild(ourGamesImg);
+            ourGamesItem.appendChild(ourGamesH1);
+        }
+        
+    }
+}
+
+ShowGames('All Games')

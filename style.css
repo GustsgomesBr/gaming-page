@@ -187,7 +187,6 @@ main .topGames{
     width: 95%;
     height: 22rem;
     margin-bottom: 1rem;
-    border-bottom: 3px solid #892cdc;
 }
 
 .ourGames .navGames a{
@@ -200,10 +199,45 @@ main .topGames{
     transition: 0.1s ease-in;
 }
 
+.navGames{
+    margin-bottom: 2rem;
+}
+
 .navGames a:hover{
     border-bottom: 3px solid #892cdc;
     transform: translateY(-3px);
     letter-spacing: 0.5px;
+}
+
+main .ourGamesSection{
+    height: auto;
+    margin-top: 1rem;
+    border-bottom: 3px solid #892cdc;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 15px;
+    grid-row-gap: 35px;
+
+}
+
+.ourGamesItem{
+    width: 15rem;
+    height: 13rem;
+    overflow: hidden;
+    margin-right: 1rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.03);
+    transition: 0.1s ease-in-out;
+    text-align: center;
+}
+
+.ourGamesItem img{
+    width: 15rem;
+    opacity: 0.8;
+}
+
+.ourGamesItem h1{
+    margin-top: 0.5rem;
 }
 
 
@@ -222,6 +256,7 @@ aside{
     width: 95%;
     height: 75vh;
     font-size: 13pt;
+    padding: 5px
 }
 
 .friends a{
