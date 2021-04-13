@@ -97,6 +97,9 @@ const ourGames = [
 ]
 
 function ShowGames(gen){
+    
+    var ourGamesSection = document.getElementsByClassName('ourGamesSection')[0]
+    ourGamesSection.innerHTML = ""
 
     for (let i = 0; i < ourGames.length; i++) {
 
@@ -109,11 +112,24 @@ function ShowGames(gen){
             ourGamesItem.className = "ourGamesItem";
             ourGamesImg.src = ourGames[i].img;
 
-            var ourGamesSection = document.getElementsByClassName('ourGamesSection')[0]
-
             ourGamesSection.appendChild(ourGamesItem);
             ourGamesItem.appendChild(ourGamesImg);
             ourGamesItem.appendChild(ourGamesH1);
+        }else{
+            for (let f = 0; f < 4; f++) {
+                if(gen === ourGames[i].category[f]){
+                    var ourGamesItem = document.createElement('div');
+                    var ourGamesImg = document.createElement('img');
+                    var ourGamesH1 = document.createElement('h1');
+                    ourGamesH1.innerHTML = ourGames[i].name;
+                    ourGamesItem.className = "ourGamesItem";
+                    ourGamesImg.src = ourGames[i].img;
+                    ourGamesSection.appendChild(ourGamesItem);
+                    ourGamesItem.appendChild(ourGamesImg);
+                    ourGamesItem.appendChild(ourGamesH1);
+                }
+            }
+
         }
         
     }
