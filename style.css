@@ -185,6 +185,7 @@ main .topGames{
 
 .ourGames{
     width: 95%;
+
     overflow: auto;
 }
 
@@ -215,6 +216,7 @@ main .ourGamesSection{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 15px;
     grid-row-gap: 35px;
+    margin-bottom: 3rem;
 
 }
 
