@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 
 *{
     border: 0;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', 'Montserrat';
+    font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
 }
 
@@ -14,11 +13,11 @@ body{
     width: 100vw;
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr 13fr;
+    grid-template-rows: 1fr 20fr;
     grid-template-areas: "header header"
                             "main aside";
     background-color: #151515;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 header{
@@ -93,6 +92,7 @@ main .wallpaper{
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
 main .wallpaper .wppbg{
@@ -185,8 +185,7 @@ main .topGames{
 
 .ourGames{
     width: 95%;
-    height: 22rem;
-    margin-bottom: 1rem;
+    overflow: auto;
 }
 
 .ourGames .navGames a{
@@ -210,7 +209,6 @@ main .topGames{
 }
 
 main .ourGamesSection{
-    height: auto;
     margin-top: 1rem;
     border-bottom: 3px solid #892cdc;
     display: grid;
@@ -223,12 +221,18 @@ main .ourGamesSection{
 .ourGamesItem{
     width: 15rem;
     height: 13rem;
-    overflow: hidden;
     margin-right: 1rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    background-color: rgba(255, 255, 255, 0.03);
-    transition: 0.1s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.05);
     text-align: center;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.ourGamesItem:hover{
+    transform: translateY(-5px);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .ourGamesItem img{
@@ -239,8 +243,6 @@ main .ourGamesSection{
 .ourGamesItem h1{
     margin-top: 0.5rem;
 }
-
-
 
 /* /MAIN */
 /* ASIDE */
