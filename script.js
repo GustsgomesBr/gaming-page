@@ -105,10 +105,18 @@ const ourGames = [
 function ShowGames(gen){
     
     var ourGamesSection = document.getElementsByClassName('ourGamesSection')[0]
+    var navBtn = document.getElementsByClassName('btnNavGames');
     ourGamesSection.innerHTML = ""
+    for (let navIndex = 0; navIndex < navBtn.length; navIndex++) {
+        if(gen === navBtn[navIndex].innerHTML){
+            navBtn[navIndex].id = "ativo"
+        }else{
+            navBtn[navIndex].id = ""
+        }
+    }
+
 
     for (let i = 0; i < ourGames.length; i++) {
-
         if(gen === "All Games"){
             var ourGamesItem = document.createElement('div');
             var ourGamesImg = document.createElement('img');
@@ -120,7 +128,7 @@ function ShowGames(gen){
             ourGamesItem.appendChild(ourGamesImg);
             ourGamesItem.appendChild(ourGamesH1);
         }else{
-            for (let f = 0; f < 4; f++) {
+            for (let f = 0; f < ourGames[i].category.length; f++) {
                 if(gen === ourGames[i].category[f]){
                     var ourGamesItem = document.createElement('div');
                     var ourGamesImg = document.createElement('img');
