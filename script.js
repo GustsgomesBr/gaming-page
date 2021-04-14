@@ -30,6 +30,12 @@ const ourGames = [
         link: ""
     },
     {
+        name: "Dead Frontier 2",
+        img: "./img/games/dead-frontier-2.jpg",
+        category: ["Survival"],
+        link: ""
+    },
+    {
         name: "Dota 2",
         img: "./img/games/dota-2.jpg",
         category: ["Action", "MMO"],
@@ -108,10 +114,8 @@ function ShowGames(gen){
             var ourGamesImg = document.createElement('img');
             var ourGamesH1 = document.createElement('h1');
             ourGamesH1.innerHTML = ourGames[i].name;
-
             ourGamesItem.className = "ourGamesItem";
             ourGamesImg.src = ourGames[i].img;
-
             ourGamesSection.appendChild(ourGamesItem);
             ourGamesItem.appendChild(ourGamesImg);
             ourGamesItem.appendChild(ourGamesH1);
